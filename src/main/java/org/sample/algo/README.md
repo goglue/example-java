@@ -1,20 +1,14 @@
 # Distance algorithm
 
-The problem:
+The problem: Calculation for lower amount of steps to transform s1 to s2
 
 ### What could metric be used for
 
 Could be used 
+- Efficiency measurement for previous
+- Difference calculator for two different strings
+- Cost calculator if the insert is heavier than delete or vise versa
 
-```
-Input s1
-Input s1Len
-Input s2
-Input s2Len
+### The idea
 
-Input s3 // Same size of s2, empty
-
-for i = 0; i < s1Len; i++
-    for j = 0; j < s2Len; j++
-        if s1[i] == s2[j]
-```
+Finding s1 (or parts of s1) inside s2
