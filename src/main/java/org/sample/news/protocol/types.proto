@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_package = "org.sample.news.protocol";
+option java_outer_classname = "ArticleProtoType";
+
+message Article {
+    int64 id = 1;
+    repeated int64 authorId = 2;
+    Content content = 3;
+    int64 publishDate = 4;
+    repeated string keywords = 5;
+}
+
+message Content {
+    string contentHeader = 1;
+    string contentDescription = 2;
+    string contentBody = 3;
+}

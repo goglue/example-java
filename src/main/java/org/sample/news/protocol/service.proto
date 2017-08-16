@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "types.proto";
+
+option java_package = "org.sample.news.protocol";
+option java_outer_classname = "ArticleProtoService";
+
+service Articles {
+    rpc CreateArticle(CreateArticleCommand) returns (Article) {};
+}
+
+message CreateArticleCommand {
+    int32 authorId = 1;
+    Content content = 2;
+    repeated string keyword = 3;
+}
